@@ -11,7 +11,7 @@ const Asritha = () => {
                     <h1 className="text-6xl font-light tracking-tight lg:text-8xl">Devineni</h1>
                 </div>
                 <span className="my-2 py-6 bg-gradient-to-r from-pink-300 via-slate-400 to-purple-300 bg-clip-text text-4xl tracking-tight text-transparent">
-                    Software Engineer
+                    Software Developer
                 </span>
                 <p className='my-2 py-6 font-light'>{ABOUT_CONTENT}</p>
             </div>
