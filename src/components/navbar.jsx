@@ -6,6 +6,9 @@ import { SiLeetcode } from 'react-icons/si';
 import { useState, useEffect,useRef } from "react";
 import { FaBars } from "react-icons/fa";
 import { FaFilePdf } from "react-icons/fa";
+import { MdOutlinePictureAsPdf} from "react-icons/md";
+import { MdEmail } from "react-icons/md";
+import { Link } from "react-scroll";
 const Navbar = () => {
     const [isMobileMenuOpen, setMobileMenuOpen] = useState(false); 
     const menuRef = useRef(null);
@@ -44,20 +47,38 @@ const Navbar = () => {
                 <img src={icon} alt="icon" className="w-12 h-12 mr-10"/>
             
                 <div className="flex space-x-6 text-lg font-medium hidden md:flex">
-                    <a href="#about" className="hover:text-[#6198b5]">About</a>
-                    <a href="#skills" className="hover:text-[#6198b5]">Skills</a>
-                    <a href="#experience" className="hover:text-[#6198b5]">Experience</a>
-                    <a href="#projects" className="hover:text-[#6198b5]">Projects</a>
-                    <a href="#education" className="hover:text-[#6198b5]">Education</a>
-                    <a href="#contact" className="hover:text-[#6198b5]">Contact</a>
+                    <Link spy={true} to="about" smooth={true} duration={1000} offset={-190} className="hover:text-[#6198b5] cursor-pointer">
+                        About
+                    </Link>
+
+                    <Link spy={true} to="skills" smooth={true} duration={1000} offset={-150} className="hover:text-[#6198b5] cursor-pointer">
+                        Skills
+                    </Link>
+
+                    <Link spy={true} to="experience" smooth={true} duration={1000} offset={-110} className="hover:text-[#6198b5] cursor-pointer">
+                        Experience
+                    </Link>         
+                    
+                    <Link spy={true} to="projects" smooth={true} duration={1000} offset={-130} className="hover:text-[#6198b5] cursor-pointer">
+                        Projects
+                    </Link>
+                    
+                    <Link spy={true} to="education" smooth={true} duration={1000} offset={-100} className="hover:text-[#6198b5] cursor-pointer">
+                        Education
+                    </Link>
+
+                    <Link spy={true} to="contact" smooth={true} duration={1000} offset={-10} className="hover:text-[#6198b5] cursor-pointer">
+                        Contact
+                    </Link>
                 </div>
             </div>
         </div>
         <div className="flex item-center space-x-6 text-2xl ml-auto m-7" style={{ paddingTop: '16px' }}>
-            <button onClick={openPdf}><FaFilePdf/></button>
-            <a href="https://www.linkedin.com/in/asrithadevineni/" target="_blank" rel="noopener noreferrer"><FaLinkedin/></a>
-            <a href="https://github.com/devineniasritha/" target="_blank" rel="noopener noreferrer"><FaGithub/></a>
-            <a href="https://leetcode.com/u/asrithadevineni/" target="_blank" rel="noopener noreferrer"><SiLeetcode/></a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=asrithadevineni@gmail.com" target="_blank" rel="noopener noreferrer" title="Mail"><MdEmail/></a>
+            <button onClick={openPdf}><MdOutlinePictureAsPdf title="Resume"/></button>
+            <a href="https://www.linkedin.com/in/asrithadevineni/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><FaLinkedin/></a>
+            <a href="https://github.com/devineniasritha/" target="_blank" rel="noopener noreferrer" title="Github"><FaGithub/></a>
+            <a href="https://leetcode.com/u/asrithadevineni/" target="_blank" rel="noopener noreferrer" title="LeetCode"><SiLeetcode/></a>
             <div className="md:hidden flex items-center ml-auto">
                 <button ref={buttonRef} onClick={toggleMobileMenu} className="text-white">
                 <FaBars size={24} />
@@ -69,12 +90,29 @@ const Navbar = () => {
         
       {isMobileMenuOpen && (
         <div ref={menuRef} className="absolute top-16 right-0 w-[200px] bg-black bg-opacity-80 text-center py-4 z-10">
-          <a href="#about" className="block py-2 hover:text-[#6198b5]">About</a>
-          <a href="#education" className="block py-2 hover:text-[#6198b5]">Education</a>
-          <a href="#experience" className="block py-2 hover:text-[#6198b5]">Experience</a>
-          <a href="#skills" className="block py-2 hover:text-[#6198b5]">Skills</a>
-          <a href="#blog" className="hover:text-[#6198b5]">Blog</a>
-          <a href="#contact" className="block py-2 hover:text-[#6198b5]">Contact</a>
+            <Link spy={true} to="about" smooth={true} duration={1000} offset={-190} className="block py-2 hover:text-[#6198b5] cursor-pointer">
+                About
+            </Link>
+
+            <Link spy={true} to="skills" smooth={true} duration={1000} offset={-150} className="block py-2 hover:text-blue-300 cursor-pointer">
+                Skills
+            </Link>
+
+            <Link spy={true} to="experience" smooth={true} duration={1000} offset={-110} className="block py-2 hover:text-[#6198b5] cursor-pointer">
+                Experience
+            </Link>         
+            
+            <Link spy={true} to="projects" smooth={true} duration={1000} offset={-130} className="block py-2 hover:text-[#6198b5] cursor-pointer">
+                Projects
+            </Link>
+            
+            <Link spy={true} to="education" smooth={true} duration={1000} offset={-100} className="block py-2 hover:text-[#6198b5] cursor-pointer">
+                Education
+            </Link>
+
+            <Link spy={true} to="contact" smooth={true} duration={1000} offset={-10} className="block py-2 hover:text-[#6198b5] cursor-pointer">
+                Contact
+            </Link>
         </div>
         )}
     </nav>

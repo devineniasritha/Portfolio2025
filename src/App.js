@@ -1,6 +1,12 @@
 import Asritha from "./components/asritha"
 import Navbar from "./components/navbar"
 import Skills from "./components/skills"
+import Experience from "./components/Experience";
+import Projects from "./components/projects";
+import Education from "./components/Education";
+import Contact from "./components/contact";
+import Footer from "./components/footer";
+
 export default function App() {
   return (
     <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-[#555555] selection:text-[#ffffff]">
@@ -14,6 +20,10 @@ export default function App() {
         <Navbar/>
         <Asritha/>
         <Skills/>
+        <Experience/>
+        <Projects/>
+        <Education/>
+        <Contact/>
       </div>
     </div>
   )
