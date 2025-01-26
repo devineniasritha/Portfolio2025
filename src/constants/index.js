@@ -4,10 +4,10 @@ export const projects = [
   {
     title: "Portfolio Website",
     description:
-      "Designed and developed a personal portfolio website to showcase projects, skills, and achievements using React, Tailwind CSS, and Netlify.",
-    technologies: ["React", "Tailwind CSS", "Netlify"],
+      "Designed and developed a personal portfolio website to showcase skills, Education and Experience using React, Tailwind CSS, and Vercel",
+    technologies: ["React", "Tailwind CSS", "Vercel"],
     github: "https://github.com/devineniasritha/Portfolio2025",
-    deployment: "",
+    deployment: "https://asrithadevineni.vercel.app/",
   }
 ];
 
