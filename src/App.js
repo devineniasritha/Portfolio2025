@@ -5,10 +5,16 @@ import Experience from "./components/Experience";
 import Projects from "./components/projects";
 import Education from "./components/Education";
 import Contact from "./components/contact";
-import Footer from "./components/footer";
+import icon from './assets/icon.png';
 
 export default function App() {
   return (
+    <div>
+      <head>
+        <link rel="icon" href={icon} />
+        <link rel="apple-touch-icon" href={icon} />
+      </head>
+    
     <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-[#555555] selection:text-[#ffffff]">
       <div className="fixed top-0 -z-10 h-full w-full">
         <div class="relative h-full w-full bg-gradient-to-b from-black via-gray-900 to-gray-800">
@@ -25,6 +31,7 @@ export default function App() {
         <Education/>
         <Contact/>
       </div>
+    </div>
     </div>
   )
 }
