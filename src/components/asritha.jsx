@@ -11,7 +11,7 @@ const Asritha = () => {
   return (
     <div id="about" className="mt-[190px] border-b border-neutral-800 pb-4 lg:mb-35">
       <div className="flex flex-col lg:flex-row">
-        <div className="w-full lg:w-[55%] mb-20 lg:mb-0">
+        <div className="w-full lg:w-[55%] mb-20 lg:mb-0 md:mb-100">
           <div className="flex items-center lg:items-start gap-5 flex-wrap">
             <h1 className="text-6xl font-light tracking-tight lg:text-8xl">Asritha</h1>
             <h1 className="text-6xl font-light tracking-tight lg:text-8xl">Devineni</h1>
@@ -55,7 +55,7 @@ const Asritha = () => {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-[45%] flex justify-center lg:justify-end lg:p-10 mt-20 sm:mt-0">
+        <div className="w-full lg:w-[45%] flex justify-center lg:justify-end lg:p-10 mt-20 sm:mt-0 md:mt-16">
           <div className="flex justify-center relative lg:-mt-24" style={{ marginTop: '-110px' }}>
             <img src={pic} alt="asritha" className="max-w-[80%] sm:max-w-[70%] lg:max-w-full" />
           </div>

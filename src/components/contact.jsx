@@ -52,7 +52,7 @@ const Contact = () => {
             <textarea id="message" name="message" className="w-full p-2 mt-4 border border-gray-300 rounded text-black text-base bg-blue-50" rows="4" required/>
           </div>
           <div className="flex justify-center">
-            <button type="submit" className="w-1/5 p-2 mt-4 font-light rounded bg-blue-600">
+            <button type="submit" className="px-4 py-2 mt-4 font-light rounded bg-blue-600 text-white min-w-[120px] text-center whitespace-nowrap">
                 Send message
             </button>
           </div>
