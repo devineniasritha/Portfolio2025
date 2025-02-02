@@ -11,7 +11,7 @@ const Asritha = () => {
   return (
     <div id="about" className="mt-[190px] border-b border-neutral-800 pb-4 lg:mb-35">
       <div className="flex flex-col lg:flex-row">
-        <div className="w-full lg:w-[55%] mb-8 lg:mb-0">
+        <div className="w-full lg:w-[55%] mb-20 lg:mb-0">
           <div className="flex items-center lg:items-start gap-5 flex-wrap">
             <h1 className="text-6xl font-light tracking-tight lg:text-8xl">Asritha</h1>
             <h1 className="text-6xl font-light tracking-tight lg:text-8xl">Devineni</h1>
