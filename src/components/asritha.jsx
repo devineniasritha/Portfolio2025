@@ -55,11 +55,13 @@ const Asritha = () => {
             </div>
           </div>
         </div>
-        <div className="w-full lg:w-[45%] flex justify-center lg:justify-end lg:p-10 mt-20 sm:mt-0 md:mt-16">
-          <div className="flex justify-center relative lg:-mt-24" style={{ marginTop: '-110px' }}>
+        <div className="w-full lg:w-[45%] flex justify-center lg:justify-end lg:p-10 mt-20 sm:mt-0 md:mt-10">
+          <div className="flex justify-center relative md:relative md:mt-0 lg:-mt-20 lg:mt-[-130px] md:self-center">
             <img src={pic} alt="asritha" className="max-w-[80%] sm:max-w-[70%] lg:max-w-full" />
           </div>
         </div>
+
+
       </div>
     </div>
   );
