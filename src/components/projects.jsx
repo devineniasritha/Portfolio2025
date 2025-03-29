@@ -37,7 +37,7 @@ import { projects } from "../constants";
                 <div class="relative group">
                   <div class="absolute -inset-0.5 bg-gradient-to-r from-blue-300 to-purple-600 rounded-lg blur opacity-45 group-hover:opacity-75 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
                     <button class="relative px-2 py-2 bg-black rounded-lg leading-none flex items-center divide-x divide-gray-600">
-                      <a href={project.Deployment} target="_blank" rel="noopener noreferrer">
+                      <a href={project.deployment} target="_blank" rel="noopener noreferrer">
                         <span class="pr-1 text-neutral-300 hover:text-white">Deployment</span>
                       </a>                        
                     </button>

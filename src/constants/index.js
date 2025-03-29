@@ -8,6 +8,14 @@ export const projects = [
     technologies: ["React", "Tailwind CSS", "Vercel"],
     github: "https://github.com/devineniasritha/Portfolio2025",
     deployment: "https://asrithadevineni.vercel.app/",
+  },
+  {
+    title: "Punchline Tagline API",
+    description:
+      "Punchline & Tagline API is a fast and minimalistic Express.js API providing 1600+ jokes and 2000+ captions across various categories. Users can filter content by categories. The API ensures quick responses. Designed for all generations, it delivers fresh and engaging content instantly. A simple API for endless humor!",
+    technologies: ["Node.js", "Express.js"],
+    github:"https://github.com/devineniasritha/jokes-captionsgenerator",
+    deployment: "https://punchlinetaglineapi.vercel.app/"
   }
 ];
 
