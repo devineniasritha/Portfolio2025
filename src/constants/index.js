@@ -16,6 +16,13 @@ export const projects = [
     technologies: ["Node.js", "Express.js"],
     github:"https://github.com/devineniasritha/jokes-captionsgenerator",
     deployment: "https://punchlinetaglineapi.vercel.app/"
+  },
+  {
+    title :"Online Food Service",
+    description:"An online food service application where users can browse the menu, place orders, and track deliveries in real-time. It includes user authentication, order management, and an admin panel for restaurant operations, ensuring a seamless experience for customers and owners.",
+    technologies: ["React", "Dotnet", "Microsoft SQL Server", "JWT"],
+    frontend_github:"https://github.com/devineniasritha/OnlineFoodService_frontend",
+    backend_github:"https://github.com/devineniasritha/OnlineFoodService_Backend"
   }
 ];
 
